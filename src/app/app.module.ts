@@ -10,6 +10,7 @@ import { registerLocaleData } from '@angular/common';
 import localeFr from '@angular/common/locales/vi';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { CoreModule } from 'projects/core/src/public-api';
+
 registerLocaleData(localeFr);
 
 export function HttpLoaderFactory(http: HttpClient) {
@@ -37,6 +38,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy},
   ],
   bootstrap: [AppComponent],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 
 })
 export class AppModule { }
