@@ -8,7 +8,6 @@ import { HttpLoaderFactory } from 'src/app/app.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from 'projects/core/src/public-api';
 import { TabHomePage } from './tabHome.component';
-
 const routes: Routes = [{
   path: '',
   children: [
@@ -45,6 +44,6 @@ const COMPONENT: Type<any>[] = [
       }
     }),
     RouterModule.forChild(routes)
-  ]
+  ],
 })
 export class TabHomeModule { }
