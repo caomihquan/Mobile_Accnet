@@ -1,0 +1,3 @@
+<ion-input [ngClass]="{'validInput': isValid}" [type]="type">
+    <span *ngIf="labelText" class="label-text" [ngClass]="{'validLabel': isValid}">{{labelText}}</span>
+</ion-input>

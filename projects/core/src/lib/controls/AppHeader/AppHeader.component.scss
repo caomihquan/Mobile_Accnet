@@ -1,0 +1,16 @@
+ion-back-button {
+    --color: #fff;
+    --icon-font-size: 1.6rem;
+    display: block;
+    margin-left: 1.2rem;
+}
+
+ion-toolbar {
+    height: 90px;
+    display: flex;
+    --background: #C8A00A;
+    color: #fff;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    --border-width: 0 !important;
+}

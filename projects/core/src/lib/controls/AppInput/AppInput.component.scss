@@ -1,0 +1,33 @@
+.label-text {
+    position: absolute;
+    top: -10px;
+    left: 8px;
+    background: #fff;
+    padding: 0 4px;
+    white-space: 1.8rem;
+    transition: all 0.1s ease-in-out;
+}
+
+ion-input {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    --padding-start: 12px !important;
+    --padding-end: 8px !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.has-focus {
+    border: 1px solid #46abfd !important;
+}
+
+.has-focus>span {
+    color: #46abfd;
+}
+
+.validInput {
+    border: 1px solid red;
+}
+
+.validLabel {
+    color: red;
+}
