@@ -1,11 +1,52 @@
 <ion-content>
-    <!-- <div style="margin:1rem;">
-        <app-Input labelText="tên đăng nhập" [isValid]="false"></app-Input>
-    </div> -->
-    <ion-item>Hợp đồng đến hạn</ion-item>
-    <!-- <swiper-container>
-        <swiper-slide>Slide 1</swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
-        <swiper-slide>Slide 3</swiper-slide>
-    </swiper-container> -->
+    <div class="contract">
+        <div class="contract-label">Hợp đồng đến hạn</div>
+        <div class="contract-label-all">Tất cả >></div>
+    </div>
+    <swiper-container [slidesPerView]="'auto'" [spaceBetween]="0">
+        <swiper-slide style="width: 90%;">
+            <app-card-contract></app-card-contract>
+        </swiper-slide>
+        <swiper-slide style="width: 90%;">
+            <app-card-contract></app-card-contract>
+        </swiper-slide>
+        <swiper-slide style="width: 90%;">
+            <app-card-contract></app-card-contract>
+        </swiper-slide>
+    </swiper-container>
+
+    <div class="header-label">
+        <div class="header-text">Chương trình khuyễn mãi</div>
+    </div>
+    <ion-img style="margin-left: 1.4rem; " src="../../../../assets/images/khuyenmai.png "></ion-img>
+
+
+    <div class="header-label">
+        <div class="header-text">Gói vay ưu đãi tài chính</div>
+    </div>
+    <div style="display: flex;">
+        <ion-img style="margin: 0 auto;" src="../../../../assets/images/Dangkyngay.png"></ion-img>
+    </div>
+
+    <div class="header-label">
+        <div class="header-text">Sản phẩm</div>
+    </div>
+    <div style="display: flex;
+    margin: 0 1.8rem;">
+        <swiper-container [slidesPerView]="2">
+            <swiper-slide>
+                <app-card-product></app-card-product>
+            </swiper-slide>
+            <swiper-slide>
+                <app-card-product></app-card-product>
+            </swiper-slide>
+            <swiper-slide>
+                <app-card-product></app-card-product>
+            </swiper-slide>
+            <swiper-slide>
+                <app-card-product></app-card-product>
+            </swiper-slide>
+        </swiper-container>
+    </div>
+
 </ion-content>

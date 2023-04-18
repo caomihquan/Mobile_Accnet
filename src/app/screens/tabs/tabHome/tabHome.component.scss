@@ -1,3 +1,42 @@
 ion-item {
     --border-style: none;
 }
+
+.contract {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    margin-left: 1.4rem;
+    margin-right: 1rem;
+    .contract-label {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    .contract-label-all {
+        font-family: 'Inter';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #6E6FCB;
+    }
+}
+
+.header-label {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.4rem;
+    margin-right: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 6px;
+    .header-text {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+    }
+}

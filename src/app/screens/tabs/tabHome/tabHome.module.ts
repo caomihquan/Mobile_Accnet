@@ -1,6 +1,6 @@
 import { IonicModule } from '@ionic/angular';
 import { Routes, RouterModule } from '@angular/router';
-import { NgModule, Type } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, Type } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { HttpClient } from '@angular/common/http';
@@ -8,6 +8,8 @@ import { HttpLoaderFactory } from 'src/app/app.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from 'projects/core/src/public-api';
 import { TabHomePage } from './tabHome.component';
+import { CardContractComponent } from './card-contract/card-contract.component';
+import { CardProductComponent } from './card-product/card-product.component';
 const routes: Routes = [{
   path: '',
   children: [
@@ -25,14 +27,16 @@ const routes: Routes = [{
 ];
 
 const COMPONENT: Type<any>[] = [
-  TabHomePage
+  TabHomePage,
+  CardContractComponent,
+  CardProductComponent
 ];
 
 @NgModule({
   declarations: [COMPONENT],
   imports: [
     CommonModule,
-    IonicModule,
+    IonicModule.forRoot(),
     CoreModule,
     FormsModule,
     ReactiveFormsModule,
@@ -43,7 +47,9 @@ const COMPONENT: Type<any>[] = [
         deps: [HttpClient]
       }
     }),
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
   ],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 export class TabHomeModule { }

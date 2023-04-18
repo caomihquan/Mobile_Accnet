@@ -1,0 +1,53 @@
+ion-card {
+    margin: 0;
+    box-shadow: initial;
+    padding: 1rem;
+    border-radius: 0;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #CAC4D0;
+    margin-left: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    .name {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.5px;
+        color: #5162FA;
+    }
+    ion-icon {
+        color: #5162FA;
+        font-size: 1.4rem;
+    }
+    .cash-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+    }
+    .cash {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .day-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.25px;
+        color: #49454F;
+    }
+    .day {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
