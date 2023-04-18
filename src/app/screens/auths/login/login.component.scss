@@ -1,0 +1,31 @@
+.wrap-top{
+    position: relative;
+    display: block;
+}
+.wrap-top-img{
+    padding: 2rem 0 0 1rem;
+    width: 65%;
+}
+.wrap-center{
+    position: relative;
+    display: block;
+    padding-top: 1rem;
+    width: 100%;
+}
+.flex-center{
+    display: block;
+    position: relative;
+    width: 90%;
+    margin:0 auto ;
+}
+.wrap-pass{
+    display: flex;
+}
+.wrap-pass-left{
+    width: 85%;
+    margin-right: 0.5rem;
+}
+.wrap-pass-right{
+    margin-top: -0.5rem;
+    width: 15%;
+}
